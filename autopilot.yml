@@ -1,0 +1,10 @@
+repositories:
+- name: autopilot-example
+  uri: https://github.com/efejjota/concourse-autopilot-example.git
+  branch: main
+
+pipelines:
+- name: hello-world
+  team: main
+  manifest: pipelines/hello-world.yml
+  repository: autopilot-example
