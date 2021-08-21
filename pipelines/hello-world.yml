@@ -1,15 +1,18 @@
 ---
+resources:
+- name: autopilot-example
+  type: git
+  source:
+    uri: https://github.com/efejjota/concourse-autopilot-example.git
+    branch: main
+
 jobs:
 - name: hello-world
   plan:
+  - get: autopilot-example
+    trigger: true
+
   - task: greet-world
+    file: autopilot-example/tasks/hello-world.yml
     vars:
       username: ((username))
-    config:
-      platform: linux
-      image_resource:
-        type: registry-image
-        source: { repository: busybox }
-      run:
-        path: echo
-        args: ["Hello ((username))!"]
