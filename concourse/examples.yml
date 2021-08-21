@@ -8,3 +8,5 @@ pipelines:
   team: main
   manifest: pipelines/pipeline-vars.yml
   repository: concourse-examples
+  vars:
+    hello: autopilot
