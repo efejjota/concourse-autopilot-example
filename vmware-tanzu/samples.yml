@@ -1,0 +1,10 @@
+repositories:
+- name: vmware-tanzu-samples
+  uri: https://github.com/vmware-tanzu-labs/concourse-pipeline-samples.git
+  branch: master
+
+pipelines:
+- name: scheduled-pipeline
+  team: main
+  manifest: concourse-pipeline-patterns/time-triggered-pipelines/01-single-time-trigger/scheduled-pipeline-01.yml
+  repository: vmware-tanzu-samples
