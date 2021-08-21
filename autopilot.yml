@@ -3,8 +3,17 @@ repositories:
   uri: https://github.com/efejjota/concourse-autopilot-example.git
   branch: main
 
+- name: concourse-examples
+  uri: https://github.com/concourse/examples.git
+  branch: master
+
 pipelines:
 - name: hello-world
   team: main
   manifest: pipelines/hello-world.yml
   repository: autopilot-example
+
+- name: concourse-hello-world
+  team: main
+  manifest: pipelines/hello-world.yml
+  repository: concourse-examples
