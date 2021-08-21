@@ -1,0 +1,10 @@
+repositories:
+- name: concourse-examples
+  uri: https://github.com/concourse/examples.git
+  branch: master
+
+pipelines:
+- name: concourse-pipeline-vars
+  team: main
+  manifest: pipelines/pipeline-vars.yml
+  repository: concourse-examples
