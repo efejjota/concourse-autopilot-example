@@ -13,7 +13,7 @@ pipelines:
   manifest: pipelines/hello-world.yml
   repository: autopilot-example
   vars:
-  - username: autopilot
+    username: autopilot
 
 - name: concourse-hello-world
   team: main

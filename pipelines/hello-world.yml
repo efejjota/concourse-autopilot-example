@@ -3,6 +3,8 @@ jobs:
 - name: hello-world
   plan:
   - task: greet-world
+    vars:
+      username: ((username))
     config:
       platform: linux
       image_resource:
