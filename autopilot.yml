@@ -19,3 +19,8 @@ pipelines:
   team: main
   manifest: pipelines/hello-world.yml
   repository: concourse-examples
+
+- name: concourse-set-pipeline
+  team: some-team
+  manifest: pipelines/set-pipelines.yml
+  repository: concourse-examples
