@@ -9,7 +9,7 @@ repositories:
 
 pipelines:
 - name: hello-world
-  team: main
+  team: some-team
   manifest: pipelines/hello-world.yml
   repository: autopilot-example
   vars:
