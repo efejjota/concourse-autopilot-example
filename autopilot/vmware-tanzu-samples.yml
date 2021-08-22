@@ -1,3 +1,4 @@
+autopilot_config: vmware-tanzu-samples
 repositories:
 - name: vmware-tanzu-samples
   uri: https://github.com/vmware-tanzu-labs/concourse-pipeline-samples.git

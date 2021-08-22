@@ -1,3 +1,4 @@
+autopilot_config: concourse-examples
 repositories:
 - name: concourse-examples
   uri: https://github.com/concourse/examples.git

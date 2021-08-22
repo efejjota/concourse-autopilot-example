@@ -1,3 +1,4 @@
+autopilot_config: autopilot-example
 repositories:
 - name: autopilot-example
   uri: https://github.com/efejjota/concourse-autopilot-example.git
