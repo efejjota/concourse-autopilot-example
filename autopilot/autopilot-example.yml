@@ -10,7 +10,6 @@ repositories:
 
 pipelines:
 - name: hello-world
-  team: some-team
   manifest: pipelines/hello-world.yml
   repository: autopilot-example
   vars:
@@ -21,6 +20,5 @@ pipelines:
   repository: concourse-examples
 
 - name: concourse-set-pipeline
-  team: some-team
   manifest: pipelines/set-pipelines.yml
   repository: concourse-examples
