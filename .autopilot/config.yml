@@ -1,0 +1,9 @@
+concourse_url: localhost:8080
+vcs_resource:
+  type: git
+  source:
+    uri: https://github.com/efejjota/concourse-autopilot-example
+    branch: main
+
+config:
+- some-team: autopilot/*.yml
