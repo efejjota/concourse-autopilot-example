@@ -6,7 +6,7 @@ image_resource:
 inputs:
   - name: repository
 outputs:
-  - name: repository
+  - name: regenerated
 run:
   path: /bin/bash
   args:
