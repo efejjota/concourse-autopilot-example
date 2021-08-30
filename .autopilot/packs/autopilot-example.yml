@@ -1,12 +1,16 @@
 autopilot_config: autopilot-example
 repositories:
 - name: autopilot-example
-  uri: https://github.com/efejjota/concourse-autopilot-example.git
-  branch: main
+  resource_type: { name: git }
+  source:
+    uri: https://github.com/efejjota/concourse-autopilot-example.git
+    branch: main
 
 - name: concourse-examples
-  uri: https://github.com/concourse/examples.git
-  branch: master
+  resource_type: { name: git }
+  source:
+    uri: https://github.com/concourse/examples.git
+    branch: master
 
 pipelines:
 - name: hello-world

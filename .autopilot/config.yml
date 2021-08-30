@@ -1,9 +1,18 @@
-concourse_url: localhost:8080
-vcs_resource:
-  type: git
+concourse:
+  url: http://localhost:8080
+  team: main
+
+repository:
+  resource_type: { name: git }
   source:
     uri: https://github.com/efejjota/concourse-autopilot-example
     branch: main
 
-config:
-- some-team: autopilot/*.yml
+packs:
+- name: example-pipelines
+  team: main
+  path: .autopilot/packs/autopilot-example.yml
+
+- name: other-example-pipelines
+  team: some-team
+  path: .autopilot/packs/*amples.yml

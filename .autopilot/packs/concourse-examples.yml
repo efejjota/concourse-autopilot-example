@@ -1,8 +1,10 @@
 autopilot_config: concourse-examples
 repositories:
 - name: concourse-examples
-  uri: https://github.com/concourse/examples.git
-  branch: master
+  resource_type: { name: git }
+  source:
+    uri: https://github.com/concourse/examples.git
+    branch: master
 
 pipelines:
 - name: concourse-pipeline-vars
