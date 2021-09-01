@@ -1,4 +1,4 @@
-autopilot_config: autopilot-example
+pack_name: autopilot-example
 repositories:
 - name: autopilot-example
   resource_type: { name: git }

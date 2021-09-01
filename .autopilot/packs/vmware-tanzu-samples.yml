@@ -1,4 +1,4 @@
-autopilot_config: vmware-tanzu-samples
+pack_name: vmware-tanzu-samples
 repositories:
 - name: vmware-tanzu-samples
   resource_type: { name: git }

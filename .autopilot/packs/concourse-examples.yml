@@ -1,4 +1,4 @@
-autopilot_config: concourse-examples
+pack_name: concourse-examples
 repositories:
 - name: concourse-examples
   resource_type: { name: git }

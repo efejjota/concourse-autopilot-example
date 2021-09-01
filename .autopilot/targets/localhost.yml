@@ -1,3 +1,5 @@
+target_name: localhost
+
 concourse:
   url: http://localhost:8080
   team: main
@@ -9,10 +11,8 @@ repository:
     branch: main
 
 packs:
-- name: example-pipelines
-  team: main
+- team: main
   path: .autopilot/packs/autopilot-example.yml
 
-- name: other-example-pipelines
-  team: some-team
+- team: some-team
   path: .autopilot/packs/*amples.yml
